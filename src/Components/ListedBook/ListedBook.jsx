@@ -1,9 +1,7 @@
-import React from 'react';
-
 const ListedBook = () => {
     return (
         <div>
-            <h2>This is a Book</h2>
+            <h2>This is Book</h2>
         </div>
     );
 };
