@@ -4,9 +4,27 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
 
     const links = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/list_book">Listed Books</NavLink></li>
-        <li><NavLink to="/pages_to_book">Pages to Read</NavLink></li>
+        <li className='mr-4'>
+            <NavLink
+                to="/"
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "border border-b font-bold text-[#23BE0A] border-[#23BE0A]" : ""
+                }
+            >Home</NavLink></li>
+        <li className='mr-4' >
+            <NavLink
+                to="/list_book"
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "border border-b font-bold text-[#23BE0A] border-[#23BE0A]" : ""
+                }
+            >Listed Books</NavLink></li>
+        <li className='mr-4'>
+            <NavLink
+                to="/pages_to_book"
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "border border-b font-bold text-[#23BE0A] border-[#23BE0A]" : ""
+                }
+            >Pages to Read</NavLink></li>
     </>
 
     return (
@@ -20,15 +38,16 @@ const Header = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <a className="btn btn-ghost text-xl">Book Vibe</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     {links}
                 </ul>
             </div>
-            <div className="navbar-end">
-                <a className="btn">Button</a>
+            <div className="navbar-end space-x-3">
+                <a className="btn text-white bg-[#23BE0A]">Sing In</a>
+                <a className="btn text-white bg-[#59C6D2]">Sing Up</a>
             </div>
         </div>
     );
