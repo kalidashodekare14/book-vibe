@@ -1,0 +1,99 @@
+[
+    {
+        "bookId": 1,
+        "bookName": "The Silent Patient",
+        "author": "Alex Michaelides",
+        "image": "https://i.ibb.co/Qmg5MrX/IMG-8729.jpg",
+        "review": "A gripping psychological thriller that keeps you guessing until the very end.",
+        "totalPages": 336,
+        "rating": 4.2,
+        "category": "Mystery",
+        "tags": [
+            "Suspense",
+            "Psychological"
+        ],
+        "publisher": "Celadon Books",
+        "yearOfPublishing": 2019
+    },
+    {
+        "bookId": 2,
+        "bookName": "Where the Crawdads Sing",
+        "author": "Delia Owens",
+        "image": "https://i.ibb.co/86s7b0Y/Where-Crawdads-Sing-3-D-800.png",
+        "review": "A beautifully written novel blending mystery, romance, and nature.",
+        "totalPages": 384,
+        "rating": 4.6,
+        "category": "Fiction",
+        "tags": [
+            "Nature",
+            "Romance",
+            "Mystery"
+        ],
+        "publisher": "G.P. Putnam's Sons",
+        "yearOfPublishing": 2018
+    },
+    {
+        "bookId": 3,
+        "bookName": "Educated",
+        "author": "Tara Westover",
+        "image": "https://i.ibb.co/G0mdgG1/educated-orig.jpg",
+        "review": "A powerful memoir of resilience and self-discovery.",
+        "totalPages": 352,
+        "rating": 4.5,
+        "category": "Biography",
+        "tags": [
+            "Memoir",
+            "Autobiography"
+        ],
+        "publisher": "Random House",
+        "yearOfPublishing": 2018
+    },
+    {
+        "bookId": 4,
+        "bookName": "Becoming",
+        "author": "Michelle Obama",
+        "image": "https://i.ibb.co/HVV48m1/09bookobama-copy-video-Sixteen-By-Nine-Jumbo1600-v3.jpg",
+        "review": "An inspiring and intimate memoir by the former First Lady.",
+        "totalPages": 448,
+        "rating": 4.8,
+        "category": "Autobiography",
+        "tags": [
+            "Memoir",
+            "Politics"
+        ],
+        "publisher": "Crown Publishing Group",
+        "yearOfPublishing": 2018
+    },
+    {
+        "bookId": 5,
+        "bookName": "The Night Circus",
+        "author": "Erin Morgenstern",
+        "image": "https://i.ibb.co/LnK4tmV/Full-Size-Render-11.jpg",
+        "review": "A magical tale of love and enchantment set in a mysterious circus.",
+        "totalPages": 387,
+        "rating": 4.4,
+        "category": "Fantasy",
+        "tags": [
+            "Magic",
+            "Romance"
+        ],
+        "publisher": "Doubleday",
+        "yearOfPublishing": 2011
+    },
+    {
+        "bookId": 6,
+        "bookName": "Atomic Habits",
+        "author": "James Clear",
+        "image": "https://i.ibb.co/ZfVnzyh/atomichabits.jpg",
+        "review": "A practical guide to building good habits and breaking bad ones.",
+        "totalPages": 320,
+        "rating": 4.7,
+        "category": "Self-help",
+        "tags": [
+            "Habits",
+            "Productivity"
+        ],
+        "publisher": "Avery",
+        "yearOfPublishing": 2018
+    }
+]
