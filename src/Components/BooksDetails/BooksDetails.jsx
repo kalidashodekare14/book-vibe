@@ -8,7 +8,7 @@ const BooksDetails = () => {
     const bookDetail = books.find(bId => bId.id === parseId)
     console.log(books)
 
-    const { image, bookName, publisher, review, tags, author, yearOfPublishing, rating, totalPages } = bookDetail
+    const { image, bookName, publisher, review, tags, author, yearOfPublishing, rating, totalPages, category } = bookDetail
 
     return (
         <div>
@@ -20,7 +20,7 @@ const BooksDetails = () => {
                     <div className="lg:w-[50%] space-y-2 p-3">
                         <h1 className="lg:text-5xl text-4xl font-bold">{bookName}</h1>
                         <p className="py-6 text-[20px] text-[#0000009f] font-[500] border-b pb-3">By : {publisher}</p>
-                        <p className="text-[20px] text-[#0000009f] font-[500] border-b pb-3">Fiction</p>
+                        <p className="text-[20px] text-[#0000009f] font-[500] border-b pb-3">{category}</p>
                         <p>
                             <span className="font-bold">Review : </span>
                             <span className="text-[#000000b6] font-[500]">{review}
@@ -31,14 +31,14 @@ const BooksDetails = () => {
                             <p className="bg-[#F4FCF3] px-5 py-2 rounded-full text-[#23BE0A]">#{tags[0]}</p>
                             <p className="bg-[#F4FCF3] px-5 py-2 rounded-full text-[#23BE0A]">#{tags[1]}</p>
                         </div>
-                        <div className="flex space-x-3 items-center">
+                        <div className="flex space-x-3 items-center pb-10">
                             <div className="text-[18px] text-[#0000009f] font-[500] space-y-3">
                                 <p>Number of Pages:</p>
                                 <p>Publisher:</p>
                                 <p>Year of Publishing:</p>
                                 <p>Rating:</p>
                             </div>
-                            <div className="text-[18px]  font-[500] space-y-3 mb-5">
+                            <div className="text-[18px]  font-[500] space-y-3 ">
                                 <p>{totalPages}</p>
                                 <p>{author}</p>
                                 <p>{yearOfPublishing}</p>
