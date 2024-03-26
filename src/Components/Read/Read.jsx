@@ -11,7 +11,7 @@ const Read = ({ read }) => {
 
     return (
         <div className="card card-side bg-base-100 border p-4">
-            <img className="bg-[#F3F3F3] p-10 rounded-2xl w-72" src={image} alt="Movie" />
+            <img className="bg-[#F3F3F3] p-10 rounded-2xl h-80 w-72" src={image} alt="Movie" />
             <div className="p-5 space-y-3">
                 <h2 className="card-title text-3xl">{bookName}</h2>
                 <p className="font-[500] text-[#000000cd]">By : {author}</p>

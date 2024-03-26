@@ -2,7 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { saveLocalStorage } from "../Utility/LocalStorage";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { saveWishLocalStorage } from "../Utility/LocalStorageWish";
+import { localWishStorageCheck, saveWishLocalStorage } from "../Utility/LocalStorageWish";
 
 const BooksDetails = () => {
 
@@ -15,15 +15,13 @@ const BooksDetails = () => {
     const { image, bookName, publisher, review, tags, author, yearOfPublishing, rating, totalPages, category } = bookDetail
 
 
-    const handleRead = () => {
-
+    const handleRead = (parseId) => {
         toast("Read Successfully");
-        saveLocalStorage(parseId);
+        saveLocalStorage(parseId); 
     }
 
     const handleWishList = () => {
-        toast("Wish List Successfully");
-        saveWishLocalStorage(parseId);
+        saveWishLocalStorage(parseId)
     }
 
 
