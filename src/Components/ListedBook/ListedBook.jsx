@@ -1,10 +1,21 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useLoaderData } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { localStorageCheck } from '../Utility/LocalStorage';
 
 
 const ListedBook = () => {
     const [tabIndex, setTabIndex] = useState(0);
+    const [listBook, setListBook] = useState([])
+    const bookList = useLoaderData()
+
+    useEffect(() => {
+        const localStorage = localStorageCheck()
+        const listedBook = bookList.filter(list => localStorage.includes(list.id))
+        setListBook(listedBook);
+    }, [])
+
 
     return (
         <div>
@@ -20,7 +31,7 @@ const ListedBook = () => {
 
                 </TabPanel>
                 <TabPanel>
-                    
+
                 </TabPanel>
             </Tabs>
         </div>
