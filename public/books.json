@@ -1,6 +1,6 @@
 [
     {
-        "bookId": 1,
+        "id": 1,
         "bookName": "The Silent Patient",
         "author": "Alex Michaelides",
         "image": "https://i.ibb.co/Qmg5MrX/IMG-8729.jpg",
@@ -16,7 +16,7 @@
         "yearOfPublishing": 2019
     },
     {
-        "bookId": 2,
+        "id": 2,
         "bookName": "Where the Crawdads Sing",
         "author": "Delia Owens",
         "image": "https://i.ibb.co/86s7b0Y/Where-Crawdads-Sing-3-D-800.png",
@@ -33,7 +33,7 @@
         "yearOfPublishing": 2018
     },
     {
-        "bookId": 3,
+        "id": 3,
         "bookName": "Educated",
         "author": "Tara Westover",
         "image": "https://i.ibb.co/G0mdgG1/educated-orig.jpg",
@@ -49,7 +49,7 @@
         "yearOfPublishing": 2018
     },
     {
-        "bookId": 4,
+        "id": 4,
         "bookName": "Becoming",
         "author": "Michelle Obama",
         "image": "https://i.ibb.co/HVV48m1/09bookobama-copy-video-Sixteen-By-Nine-Jumbo1600-v3.jpg",
@@ -65,7 +65,7 @@
         "yearOfPublishing": 2018
     },
     {
-        "bookId": 5,
+        "id": 5,
         "bookName": "The Night Circus",
         "author": "Erin Morgenstern",
         "image": "https://i.ibb.co/LnK4tmV/Full-Size-Render-11.jpg",
@@ -81,7 +81,7 @@
         "yearOfPublishing": 2011
     },
     {
-        "bookId": 6,
+        "id": 6,
         "bookName": "Atomic Habits",
         "author": "James Clear",
         "image": "https://i.ibb.co/ZfVnzyh/atomichabits.jpg",
