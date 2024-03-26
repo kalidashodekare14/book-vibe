@@ -1,13 +1,9 @@
-import { CiLocationOn } from "react-icons/ci";
-import { CiUser } from "react-icons/ci";
+import { CiLocationOn, CiUser } from "react-icons/ci";
 import { RiPagesLine } from "react-icons/ri";
 
+const WishlistBook = ({ wish }) => {
 
-const Read = ({ read }) => {
-    console.log(read)
-
-    const { image, bookName, author, tags, yearOfPublishing, totalPages, publisher, category, rating } = read
-
+    const { image, bookName, author, tags, yearOfPublishing, totalPages, publisher, category, rating } = wish
 
     return (
         <div className="card card-side bg-base-100 border p-4">
@@ -45,4 +41,4 @@ const Read = ({ read }) => {
     );
 };
 
-export default Read;
+export default WishlistBook;

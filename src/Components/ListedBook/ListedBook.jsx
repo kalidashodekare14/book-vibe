@@ -4,17 +4,27 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { localStorageCheck } from '../Utility/LocalStorage';
 import Read from '../Read/Read';
+import { localWishStorageCheck } from '../Utility/LocalStorageWish';
+import WishlistBook from '../WishlistBook/WishlistBook';
 
 
 const ListedBook = () => {
     const [tabIndex, setTabIndex] = useState(0);
     const [listBook, setListBook] = useState([])
+    const [wishlist, setWishList] = useState([])
+
     const bookList = useLoaderData()
 
     useEffect(() => {
         const localStorage = localStorageCheck()
         const listedBook = bookList.filter(list => localStorage.includes(list.id))
         setListBook(listedBook);
+    }, [])
+
+    useEffect(() => {
+        const wishLocalStorage = localWishStorageCheck()
+        const wisthListBook = bookList.filter(wish => wishLocalStorage.includes(wish.id))
+        setWishList(wisthListBook)
     }, [])
 
 
@@ -36,7 +46,11 @@ const ListedBook = () => {
                     </div>
                 </TabPanel>
                 <TabPanel>
-
+                        <div>
+                            {
+                              wishlist.map(wish => <WishlistBook key={wish.id} wish={wish}></WishlistBook>)  
+                            }
+                        </div>
                 </TabPanel>
             </Tabs>
         </div>

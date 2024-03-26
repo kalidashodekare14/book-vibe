@@ -1,5 +1,5 @@
 const localStorageCheck = () =>{
-    const getLocalStorage = localStorage.getItem('listed_book')
+    const getLocalStorage = localStorage.getItem('read_book')
     if(getLocalStorage){
         return JSON.parse(getLocalStorage)
     }
@@ -12,7 +12,7 @@ const saveLocalStorage = id =>{
     const exists = getStorage.find(isId => isId === id)
     if(!exists){
         getStorage.push(id)
-        localStorage.setItem('listed_book', JSON.stringify(getStorage))
+        localStorage.setItem('read_book', JSON.stringify(getStorage))
     }
 }
 
