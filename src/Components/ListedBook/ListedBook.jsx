@@ -16,8 +16,12 @@ const ListedBook = () => {
                     <Tab>Read Books</Tab>
                     <Tab>Wishlist Books</Tab>
                 </TabList>
-                <TabPanel></TabPanel>
-                <TabPanel></TabPanel>
+                <TabPanel>
+
+                </TabPanel>
+                <TabPanel>
+                    
+                </TabPanel>
             </Tabs>
         </div>
     );
