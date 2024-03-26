@@ -3,6 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { localStorageCheck } from '../Utility/LocalStorage';
+import Read from '../Read/Read';
 
 
 const ListedBook = () => {
@@ -28,7 +29,11 @@ const ListedBook = () => {
                     <Tab>Wishlist Books</Tab>
                 </TabList>
                 <TabPanel>
-
+                    <div className='my-10 space-y-4'>
+                        {
+                            listBook.map(read => <Read key={read.id} read={read}></Read>)
+                        }
+                    </div>
                 </TabPanel>
                 <TabPanel>
 
