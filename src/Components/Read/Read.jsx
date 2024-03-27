@@ -8,6 +8,7 @@ const Read = ({ read }) => {
 
     const { image, bookName, author, tags, yearOfPublishing, totalPages, publisher, category, rating } = read
 
+    // console.log(rating)
 
     return (
         <div className="card card-side bg-base-100 border p-4">

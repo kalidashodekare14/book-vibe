@@ -41,7 +41,7 @@ const PagesToRead = () => {
     return (
         <div className="flex flex-col justify-center items-center h-[90vh]">
             <BarChart
-                width={1000}
+                width={1200}
                 height={400}
                 data={chart}
                 margin={{
@@ -52,7 +52,7 @@ const PagesToRead = () => {
                 }}
             >
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="author" />
+                <XAxis dataKey="bookName" />
                 <YAxis />
                 <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
                     {chart.map((entry, index) => (

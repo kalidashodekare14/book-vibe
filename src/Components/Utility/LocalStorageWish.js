@@ -13,7 +13,7 @@ const saveWishLocalStorage = id => {
     const getWishStorage = localWishStorageCheck();
     const exists = getWishStorage.find(isId => isId === id)
     if (!exists) {
-        toast.success("successfuly")
+        toast.success("Read")
         getWishStorage.push(id)
         localStorage.setItem('wishlist_book', JSON.stringify(getWishStorage))
     }

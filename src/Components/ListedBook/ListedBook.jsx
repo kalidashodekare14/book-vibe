@@ -14,7 +14,33 @@ const ListedBook = () => {
     const [listBook, setListBook] = useState([])
     const [wishlist, setWishList] = useState([])
 
+    // const [rating, setRating] = useState([])
+
     const bookList = useLoaderData()
+
+
+    const handleRating = () => {
+        const check = listBook.sort((a, b) => b.rating - a.rating);
+        setListBook([...check]);
+        console.log(check)
+    }
+
+    const handleNumberOfPages = () => {
+        const check1 = listBook.sort((a,b)=> b.totalPages - a.totalPages)
+        setListBook([...check1])
+    }
+
+    const handlePublishedYear = () =>{
+        const check2 = listBook.sort((a,b) => b.yearOfPublishing - a.yearOfPublishing)
+        setListBook([...check2])
+        console.log([...check2])
+    }
+
+
+
+
+
+
 
     useEffect(() => {
         const localStorage = localStorageCheck()
@@ -41,9 +67,9 @@ const ListedBook = () => {
                         <FaAngleDown className='text-xl' />
                     </summary>
                     <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-                        <li onClick={()=>handleSort('rating')}><a>Rating</a></li>
-                        <li><a>Number of Pages</a></li>
-                        <li><a>Published Year</a></li>
+                        <li onClick={handleRating}><a>Rating</a></li>
+                        <li onClick={handleNumberOfPages}><a>Number of Pages</a></li>
+                        <li onClick={handlePublishedYear}><a>Published Year</a></li>
                     </ul>
                 </details>
             </div>

@@ -1,5 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { saveLocalStorage } from "../Utility/LocalStorage";
+import { localStorageCheck, saveLocalStorage } from "../Utility/LocalStorage";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { localWishStorageCheck, saveWishLocalStorage } from "../Utility/LocalStorageWish";
@@ -10,20 +10,19 @@ const BooksDetails = () => {
     const { id } = useParams();
     const parseId = parseInt(id)
     const bookDetail = books.find(bId => bId.id === parseId)
-    console.log(books)
+    // console.log(books)
 
     const { image, bookName, publisher, review, tags, author, yearOfPublishing, rating, totalPages, category } = bookDetail
 
 
     const handleRead = () => {
-        saveLocalStorage(parseId); 
+        saveLocalStorage(parseId);
     }
+    
 
     const handleWishList = () => {
-        saveWishLocalStorage(parseId)
+        saveWishLocalStorage(parseId) 
     }
-
-
 
 
     return (
