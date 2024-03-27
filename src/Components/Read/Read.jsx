@@ -4,7 +4,7 @@ import { RiPagesLine } from "react-icons/ri";
 
 
 const Read = ({ read }) => {
-    console.log(read)
+    // console.log(read)
 
     const { image, bookName, author, tags, yearOfPublishing, totalPages, publisher, category, rating } = read
 

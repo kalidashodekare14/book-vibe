@@ -15,8 +15,7 @@ const BooksDetails = () => {
     const { image, bookName, publisher, review, tags, author, yearOfPublishing, rating, totalPages, category } = bookDetail
 
 
-    const handleRead = (parseId) => {
-        toast("Read Successfully");
+    const handleRead = () => {
         saveLocalStorage(parseId); 
     }
 
