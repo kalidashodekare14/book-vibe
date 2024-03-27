@@ -2,9 +2,8 @@ import { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import { localStorageCheck } from '../Utility/LocalStorage';
+import { localStorageCheck, localWishStorageCheck } from '../Utility/LocalStorage';
 import Read from '../Read/Read';
-import { localWishStorageCheck } from '../Utility/LocalStorageWish';
 import WishlistBook from '../WishlistBook/WishlistBook';
 import { FaAngleDown } from "react-icons/fa";
 
@@ -22,18 +21,22 @@ const ListedBook = () => {
     const handleRating = () => {
         const check = listBook.sort((a, b) => b.rating - a.rating);
         setListBook([...check]);
-        console.log(check)
+        const wish = wishlist.sort((a,b)=> b.rating - a.rating)
+        setWishList([...wish])
     }
 
     const handleNumberOfPages = () => {
         const check1 = listBook.sort((a,b)=> b.totalPages - a.totalPages)
         setListBook([...check1])
+        const wish1 = wishlist.sort((a,b)=> b.totalPages - a.totalPages)
+        setWishList([...wish1])
     }
 
     const handlePublishedYear = () =>{
         const check2 = listBook.sort((a,b) => b.yearOfPublishing - a.yearOfPublishing)
         setListBook([...check2])
-        console.log([...check2])
+        const wish2 = wishlist.sort((a,b)=> b.yearOfPublishing - a.yearOfPublishing)
+        setWishList([...wish2])
     }
 
 
@@ -50,8 +53,8 @@ const ListedBook = () => {
 
     useEffect(() => {
         const wishLocalStorage = localWishStorageCheck()
-        const wisthListBook = bookList.filter(wish => wishLocalStorage.includes(wish.id))
-        setWishList(wisthListBook)
+        const wishListBook = bookList.filter(wish => wishLocalStorage.includes(wish.id))
+        setWishList(wishListBook)
     }, [])
 
 
