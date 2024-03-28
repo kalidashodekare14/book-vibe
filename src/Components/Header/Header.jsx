@@ -1,30 +1,38 @@
 import { NavLink } from 'react-router-dom';
 import './Header.css'
+import './Header.css'
 
 const Header = () => {
 
     const links = <>
-        <li className='mr-4'>
+        <li className='mr-4 font-[500] text-[#393737f0] fonts-work-sans'>
             <NavLink
                 to="/"
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "border border-b font-bold text-[#23BE0A] border-[#23BE0A]" : ""
                 }
             >Home</NavLink></li>
-        <li className='mr-4' >
+        <li className='mr-4 font-[500] text-[#393737f0] fonts-work-sans' >
             <NavLink
                 to="/list_book"
                 className={({ isActive, isPending }) =>
                     isPending ? "text-[#23BE0A] border-[#23BE0A]" : isActive ? "border border-b font-bold text-[#23BE0A] border-[#23BE0A]" : ""
                 }
             >Listed Books</NavLink></li>
-        <li className='mr-4'>
+        <li className='mr-4 font-[500] text-[#393737f0] fonts-work-sans'>
             <NavLink
                 to="/pages_to_book"
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "border border-b font-bold text-[#23BE0A] border-[#23BE0A]" : ""
                 }
             >Pages to Read</NavLink></li>
+        <li className='mr-4 font-[500] text-[#393737f0] fonts-work-sans'>
+            <NavLink
+                to="/contact"
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "border border-b font-bold text-[#23BE0A] border-[#23BE0A]" : ""
+                }
+            >Contact</NavLink></li>
     </>
 
     return (
@@ -38,7 +46,7 @@ const Header = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Book Vibe</a>
+                <a className="btn btn-ghost text-2xl fonts-work-sans">Book Vibe</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

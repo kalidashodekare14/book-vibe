@@ -39,7 +39,7 @@ const PagesToRead = () => {
 
 
     return (
-        <div className="flex flex-col justify-center items-center lg:h-[90vh] h-[50vh]">
+        <div className="flex flex-col justify-center items-center lg:h-[80vh] h-[40vh]">
 
             <ResponsiveContainer>
                 <BarChart

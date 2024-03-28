@@ -13,6 +13,7 @@ import PagesToRead from './Components/PagesToRead/PagesToRead';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
+import Contact from './Components/Contact/Contact';
 
 
 const router = createBrowserRouter([
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
         element: <BooksDetails></BooksDetails>,
         loader: () => fetch('../books.json')
 
+      },
+      {
+        path: '/contact',
+        element: <Contact></Contact>
       }
     ]
   },
