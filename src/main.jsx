@@ -12,12 +12,14 @@ import BooksDetails from './Components/BooksDetails/BooksDetails';
 import PagesToRead from './Components/PagesToRead/PagesToRead';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ErrorPage from './Components/ErrorPage/ErrorPage';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
