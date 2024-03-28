@@ -21,14 +21,7 @@ const BooksDetails = () => {
 
 
     const handleWishList = () => {
-
-        
-
-
-
-
         saveWishLocalStorage(parseId)
-
     }
 
 

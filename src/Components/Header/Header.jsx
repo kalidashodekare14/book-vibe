@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import './Header.css'
 
 const Header = () => {
 
@@ -15,7 +16,7 @@ const Header = () => {
             <NavLink
                 to="/list_book"
                 className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "border border-b font-bold text-[#23BE0A] border-[#23BE0A]" : ""
+                    isPending ? "text-[#23BE0A] border-[#23BE0A]" : isActive ? "border border-b font-bold text-[#23BE0A] border-[#23BE0A]" : ""
                 }
             >Listed Books</NavLink></li>
         <li className='mr-4'>

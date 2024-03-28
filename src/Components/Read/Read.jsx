@@ -11,18 +11,20 @@ const Read = ({ read }) => {
     // console.log(rating)
 
     return (
-        <div className="card card-side bg-base-100 border p-4">
-            <img className="bg-[#F3F3F3] p-10 rounded-2xl h-80 w-72" src={image} alt="Movie" />
-            <div className="p-5 space-y-3">
+        <div className="card lg:card-side bg-base-100 border lg:p-4">
+            <img className="bg-[#F3F3F3] p-10 rounded-2xl h-80 lg:w-72" src={image} alt="Movie" />
+            <div className="lg:p-5 p-2 lg:space-y-5 space-y-5">
                 <h2 className="card-title text-3xl">{bookName}</h2>
                 <p className="font-[500] text-[#000000cd]">By : {author}</p>
-                <div className="flex items-center space-x-5 font-[500] text-[#000000cd]">
+                <div className="flex items-center space-x-2">
                     <p>Tag</p>
-                    <p className="px-5 py-2 rounded-2xl bg-[#F4FCF3] text-[#23BE0A]">#{tags[0]}</p>
-                    <p className="px-5 py-2 rounded-2xl bg-[#F4FCF3] text-[#23BE0A]">#{tags[1]}</p>
-                    <div className="flex items-center space-x-2">
-                        <CiLocationOn className="text-xl" />
-                        <p className="font-[500] text-[#000000cd]">Year of Publishing: {yearOfPublishing}</p>
+                    <div className="grid  grid-cols-2 lg:grid-cols-4 lg:space-x-5 font-[500] text-[#000000cd]">
+                        <p className="lg:px-5 lg:py-2 rounded-2xl text-[14px] bg-[#F4FCF3] text-[#23BE0A]">#{tags[0]}</p>
+                        <p className="lg:px-5 lg:py-2 rounded-2xl text-[14px] bg-[#F4FCF3] text-[#23BE0A]">#{tags[1]}</p>
+                        <div className="flex items-center space-x-2">
+                            <CiLocationOn className="text-xl" />
+                            <p className="font-[500] text-[14px] text-[#000000cd]">Year of Publishing: {yearOfPublishing}</p>
+                        </div>
                     </div>
 
                 </div>
@@ -36,10 +38,12 @@ const Read = ({ read }) => {
                         <p className="text-[18px] font-[500] text-[#000000b5]">Page {totalPages}</p>
                     </div>
                 </div>
-                <div className="flex items-center space-x-5">
-                    <p className="px-5 py-2 font-[500] rounded-2xl bg-[#E0EEFF] text-[#3C93FF]">Category: {category}</p>
-                    <p className="px-5 py-2 font-[500] rounded-2xl bg-[#FFF3E1] text-[#FFAC33]">Rating: {rating}</p>
-                    <button className="btn text-white font-bold bg-[#23BE0A]">View Details</button>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 text-center gap-3 lg:space-x-5 lg:w-[80%]">
+                    <p className="lg:px-5 px-2 py-3 font-[500] rounded-2xl bg-[#E0EEFF] text-[#3C93FF]">Category: {category}</p>
+                    <p className="lg:px-5 px-2 py-3 font-[500] rounded-2xl bg-[#FFF3E1] text-[#FFAC33]">Rating: {rating}</p>
+                    <div className="">
+                        <button className="btn text-white font-bold bg-[#23BE0A]">View Details</button>
+                    </div>
                 </div>
             </div>
         </div>

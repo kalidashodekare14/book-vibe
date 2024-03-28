@@ -82,7 +82,7 @@ const ListedBook = () => {
                     <Tab>Wishlist Books</Tab>
                 </TabList>
                 <TabPanel>
-                    <div className='my-10 space-y-4'>
+                    <div className='lg:my-10 space-y-4'>
                         {
                             listBook.map(read => <Read key={read.id} read={read}></Read>)
                         }
