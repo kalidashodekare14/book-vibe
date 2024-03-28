@@ -9,7 +9,7 @@ const AboutUs = () => {
             <div className='flex flex-col lg:flex-row justify-around items-center '>
                 <div className='relative lg:mr-10 p-3'>
                     <img src={read} alt="" />
-                    <div className='absolute  -right-10 -bottom-8 bg-[#DD321E] rounded-full w-72 h-72  flex flex-col justify-center items-center text-white'>
+                    <div className='absolute hidden -right-10 -bottom-8 bg-[#DD321E] rounded-full lg:w-72 lg:h-72  lg:flex flex-col justify-center items-center text-white'>
                         <h1 className='text-2xl text-center fonts-work-sans'>Good Experience <br /> In Last</h1>
                         <h2 className='text-[80px]'>15</h2>
                         <h3 className='text-2xl'>Year</h3>
@@ -22,15 +22,16 @@ const AboutUs = () => {
                     <button className='btn bg-black text-white'>Explore Now</button>
                 </div>
             </div>
-            <div className='flex my-32 justify-center items-center'>
-                <div className='w-[50%] space-y-4'>
-                    <h1 className='text-5xl leading-tight fonts-work-sans'>Dunki is founder thanks team, clients; solidifies trailblazer status.</h1>
+            <div className='flex flex-col-reverse lg:flex-row my-32 justify-center items-center p-2'>
+                <div className='lg:w-[50%] space-y-4 lg:mr-4'>
+                    <h1 className='lg:text-5xl text-3xl font-bold mt-2 leading-tight fonts-work-sans'>Dunki is founder thanks team, clients; solidifies trailblazer status.</h1>
                     <p className='leading-relaxed fonts-work-sans'>Dunki, where joy intertwines with elegance, offers masterpieces cherished and handled with pleasure. Each creation embodies timeless delight, showcasing exquisite craftsmanship that transcends trends, evoking admiration and appreciation in every touch.</p>
                 </div>
-                <div className='w-[50%]'>
+                <div className='lg:w-[50%]'>
                     <img className='rounded' src={read2} alt="" />
                 </div>
             </div>
+
         </div>
     );
 };
