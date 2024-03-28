@@ -28,6 +28,13 @@ const Header = () => {
             >Pages to Read</NavLink></li>
         <li className='mr-4 font-[500] text-[#393737f0] fonts-work-sans'>
             <NavLink
+                to="/about_us"
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "border border-b font-bold text-[#23BE0A] border-[#23BE0A]" : ""
+                }
+            >About Us</NavLink></li>
+        <li className='mr-4 font-[500] text-[#393737f0] fonts-work-sans'>
+            <NavLink
                 to="/contact"
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? "border border-b font-bold text-[#23BE0A] border-[#23BE0A]" : ""

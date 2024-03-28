@@ -14,6 +14,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import Contact from './Components/Contact/Contact';
+import AboutUs from './Components/AboutUs/AboutUs';
 
 
 const router = createBrowserRouter([
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact></Contact>
+      },
+      {
+        path: '/about_us',
+        element: <AboutUs></AboutUs>
       }
     ]
   },
