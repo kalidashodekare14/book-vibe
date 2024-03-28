@@ -24,7 +24,7 @@ const AboutUs = () => {
             </div>
             <div className='flex flex-col-reverse lg:flex-row my-32 justify-center items-center p-2'>
                 <div className='lg:w-[50%] space-y-4 lg:mr-4'>
-                    <h1 className='lg:text-5xl text-3xl font-bold mt-2 leading-tight fonts-work-sans'>Dunki is founder thanks team, clients; solidifies trailblazer status.</h1>
+                    <h1 className='lg:text-5xl text-3xl  mt-2 leading-tight fonts-work-sans'>Dunki is founder thanks team, clients; solidifies trailblazer status.</h1>
                     <p className='leading-relaxed fonts-work-sans'>Dunki, where joy intertwines with elegance, offers masterpieces cherished and handled with pleasure. Each creation embodies timeless delight, showcasing exquisite craftsmanship that transcends trends, evoking admiration and appreciation in every touch.</p>
                 </div>
                 <div className='lg:w-[50%]'>
