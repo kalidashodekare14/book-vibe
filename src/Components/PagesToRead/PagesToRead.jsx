@@ -41,6 +41,7 @@ const PagesToRead = () => {
     return (
         <div className="flex flex-col justify-center items-center lg:h-[90vh]">
             <BarChart
+                className="barChart"
                 width={1200}
                 height={400}
                 data={chart}
